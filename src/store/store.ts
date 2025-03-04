@@ -22,8 +22,7 @@ interface HabitState {
 
 const useHabitStore = create<HabitState>()(
   devtools(
-    //   persist(
-    (set, get) => ({
+    (set) => ({
       habits: [],
       isLoading: false,
       error: null,
